@@ -5,7 +5,8 @@
   "author": "omarvides <omarvides@gmail.com>",
   "description": "A simple helpful robot for your Company",
   "scripts": {
-    "start": "hubot-dotenv --adapter slack -n bot"
+    "start": "hubot-dotenv --adapter slack -n bot",
+    "test": "node_modules/mocha/bin/mocha tests"
   },
   "dependencies": {
     "hubot": "^2.19.0",
@@ -26,5 +27,11 @@
   },
   "engines": {
     "node": "0.10.x"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "proxyquire": "^1.7.11",
+    "sinon": "^2.1.0"
   }
 }
