@@ -4,7 +4,7 @@ require('dotenv').config();
 // const twitterController = require('../controllers/twitter-controller');
 const twitterClient = require('../clients/twitter-client');
 const filters = ['go', 'golang', 'node', 'javascript', 'nodejs', 'devops', 'part time', 'parttime', 'freelance', 'full stack', 'fullstack'];
-const exclude = ['bigdata', 'europe', 'us', 'php', ]
+const exclude = ['bigdata', 'europe', 'php']
 
 module.exports = function(robot) {
     // robot.hear(/(#)?sendremote(s)?(.*)|(remote(s)?\?)/, twitterController.new);
