@@ -16,7 +16,7 @@ available, etc!
 
 ### Configuration
 
-This repository uses a .env configuration file which must contain at minimum 
+This repository uses a .env configuration file which must contain at minimum
 the variables below
 
 ```.env
@@ -25,6 +25,7 @@ HUBOT_TWITTER_KEY
 HUBOT_TWITTER_SECRET
 HUBOT_TWITTER_TOKEN
 HUBOT_TWITTER_TOKEN_SECRET
+DEFAULT_CHANNEL
 ```
 
 
