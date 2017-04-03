@@ -12,7 +12,7 @@ module.exports = function(robot) {
     nodeStream.on('data', function(event) {
       let shouldSend = false;
         filters.forEach(function(filter) {
-            if(event.text.toLower().indexOf(filter.toLower()) >= 0) {
+            if(event.text.toLowerCase().indexOf(filter.toLowerCase()) >= 0) {
                shouldSend = true;
             }
         });
