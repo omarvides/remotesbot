@@ -18,7 +18,7 @@ module.exports = function(robot) {
           }
       });
       exclude.forEach(function(exclude) {
-        if(event.text.toLowerCase().indexOf(filter.toLowerCase()) >= 0) {
+        if(event.text.toLowerCase().indexOf(exclude.toLowerCase()) >= 0) {
            shouldSend = false;
         }
       });
