@@ -2,7 +2,7 @@
 const twitterClient = require('../clients/twitter-client');
 const nodeStream = twitterClient.stream('user');
 const topic = ['#go', ' go ', 'golang', 'node', 'javascript', 'nodejs', 'devops', 'part time', 'parttime', 'freelance', 'full stack', 'fullstack'];
-const exclude = ['bigdata', 'europe', 'php']
+const exclude = ['bigdata', 'europe', 'php', 'onsite remote']
 
 module.exports.New = function(robot) {
   nodeStream.on('data', function(event) {
