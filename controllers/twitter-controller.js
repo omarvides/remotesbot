@@ -1,7 +1,7 @@
 'use strict';
 const twitterClient = require('../clients/twitter-client');
 const nodeStream = twitterClient.stream('user');
-const topic = ['go', 'golang', 'node', 'javascript', 'nodejs', 'devops', 'part time', 'parttime', 'freelance', 'full stack', 'fullstack'];
+const topic = ['#go', ' go ', 'golang', 'node', 'javascript', 'nodejs', 'devops', 'part time', 'parttime', 'freelance', 'full stack', 'fullstack'];
 const exclude = ['bigdata', 'europe', 'php']
 
 module.exports.New = function(robot) {
